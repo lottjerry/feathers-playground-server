@@ -1,3 +1,4 @@
+/*
 const knex = require("knex");
 const dotenv = require("dotenv");
 dotenv.config();
@@ -22,3 +23,9 @@ module.exports = function (app) {
 
   app.set("knexClient", db);
 };
+*/
+const dotenv = require("dotenv");
+const mysql = require('mysql2')
+const connection = mysql.createConnection(process.env.DATABASE_URL)
+console.log('Connected to PlanetScale!')
+connection.end()
