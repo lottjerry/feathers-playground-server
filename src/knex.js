@@ -2,8 +2,8 @@ const knex = require("knex");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const HOST = process.env.HOST;
-const PORT = process.env.PORT;
+const HOST = process.env.DB_HOST;      // Updated
+const PORT = process.env.DB_PORT;
 const USERNAME = process.env.USERNAME;
 const PASSWORD = process.env.PASSWORD;
 const DATABASE = process.env.DATABASE;
